@@ -1,0 +1,22 @@
+{
+  "name": "fokus-postfach",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fokus-Postfach — alle Postfächer in einem Dashboard, wichtige Mails sofort, der Rest gebündelt am Abend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "outlook-login": "node scripts/outlook-login.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "imapflow": "^1.0.171",
+    "mailparser": "^3.7.1"
+  }
+}
